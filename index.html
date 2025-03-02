@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colectivo Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('bg.jpg'); /* Replace with actual background image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: left;
+            padding: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('https://www.transparenttextures.com/patterns/wood.png'), #8B4513;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo p {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.menu-category {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.menu-category h2 {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category li {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+/* Ensuring equal spacing for text, price, and button */
+.menu-category li .item {
+    flex: 2;
+}
+
+.menu-category li .price {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-right: 10px;
+}
+
+.menu-category li .order-btn {
+    flex: 1;
+    text-align: right;
+}
+
+/* Lightning Glow Effect on Hover */
+.menu-category li:hover {
+    background-color: rgba(255, 255, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.5);
+    transform: scale(1.02);
+}
+
+.order-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #ffaa00;
+}
+        .container {
+            max-width: 90%;
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+        }
+
+        .menu-title {
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 1.1;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .menu-description {
+            font-size: 18px;
+            margin-top: 15px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #ffc107;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #ff9800;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .navbar a:hover {
+            color: #ffc107;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .menu-title {
+                font-size: 36px;
+            }
+            .menu-description {
+                font-size: 16px;
+                max-width: 90%;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('https://www.transparenttextures.com/patterns/wood.png'), #8B4513;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo p {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.menu-category {
+    background: #333;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.menu-category h2 {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category li {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    color: #ffcc00;
+    margin-right: 10px;
+}
+
+.order-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #ffaa00;
+}   
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('https://www.transparenttextures.com/patterns/wood.png'), #8B4513;
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo p {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.menu-category {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.menu-category h2 {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+    color: rgba(255, 204, 0, 0.6); /* 40% transparent yellow */
+    border-bottom: 2px solid rgba(255, 204, 0, 0.6); /* 40% transparent border */
+    padding-bottom: 5px;
+
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category li {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Lightning Glow Effect on Hover */
+.menu-category li:hover {
+    background-color: rgba(255, 255, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.5);
+    transform: scale(1.02);
+}
+
+.price {
+    font-weight: bold;
+    color: #ffcc00;
+    margin-right: 10px;
+}
+
+.order-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #ffaa00;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="menu-title"></h1>
+        <p class="menu-description">
+    <main>
+        <section class="menu-category">   
+            <h2>Tea</h2>
+            <ul>
+                <li><span class="item">Chocolate Tea</span> <span class="price">₹10</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Ginger Tea</span> <span class="price">₹10</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Rose Tea</span> <span class="price">₹10</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Elaichi Tea</span> <span class="price">₹15</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Masala Tea</span> <span class="price">₹20</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Pan Tea</span> <span class="price">₹20</span> <button class="order-btn">Order</button></li>
+            </ul>
+        </section>
+
+        <section class="menu-category">
+            <h2>Hot Coffee</h2>
+            <ul>
+                <li><span class="item">Hot Coffee</span> <span class="price">₹15</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Strong Coffee</span> <span class="price">₹20</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Chocolate Coffee</span> <span class="price">₹20</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Strong Chocolate Coffee</span> <span class="price">₹25</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Black Coffee</span> <span class="price">₹25</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Moustache Coffee</span> <span class="price">₹30</span> <button class="order-btn">Order</button></li>
+            </ul>
+        </section>
+
+        <section class="menu-category">
+            <h2>Mocktails</h2>
+            <ul>
+                <li><span class="item">Cucumber Mocktail</span> <span class="price">₹60</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Grany Appi Mocktail</span> <span class="price">₹60</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Blue Lagoon Mocktail</span> <span class="price">₹60</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Rosy Lips</span> <span class="price">₹50</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Strawberry</span> <span class="price">₹50</span> <button class="order-btn">Order</button></li>
+                <li><span class="item">Watermelon Blast</span> <span class="price">₹50</span> <button class="order-btn">Order</button></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
